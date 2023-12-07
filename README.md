@@ -1,23 +1,36 @@
-1. Desenhar o cenário.
-2. Criar a estrutura da nave.
-3. Desenhar uma nave na tela.
-4. Implementar o movimento dessa nave.
-5. Implementar o desenho e o movimento da segunda nave.
-6. Implementar os diferentes tipos de naves e fazer com que as naves troquem de tipo aleatoriamente ao
-atravessar a tela.
-7. Implementar a troca aleatória de posição vertical das naves.
-8. Criar a estrutura para o tiro.
-9. Implementar o disparo do tiro: desenho, disparo a partir da tecla e movimento.
-10. Implementar a estrutura para o alvo.
-11. Criar a matriz de alvos e inicializar os seus valores de acordo com o que é pedido neste enunciado.
-12. Desenhar os alvos na tela.
-13. Implementar a colisão do tiro com o alvo.
-14. Implementar o sistema de pontuação.
-15. Exibir a pontuação na tela.
-16. Implementar o sistema de vidas (os 3 tiros que cada jogador pode errar).
-17. Exibir as vidas na tela.
-18. Implementar o fim de jogo.
-19. Exibir uma tela de fim de jogo na tela.
-20. Implementar sistema de registro do histórico de partidas.
-21. Exibir o histórico das partidas na tela de fim de jogo.
-22. Escrever a documentação.
+# CANYON BOMBER
+
+### Autor: André Augusto Moreira Martins
+
+<p>Trata-se do projeto final da disciplina PDS 1 (Programação e Desenvolvimento de Software I) ofertada pelo DCC-UFMG.</p>
+<p>Objetivo: Utilizar os conhecimentos adquiridos em sala de aula acerca da Linguagem C, para fazer algo parecido com o jogo Canyon Bomber, publicado pela Atari.</p>
+
+
+## Tecnologias utilizadas:
+- Linguagem C
+- Biblioteca [allegro5](https://liballeg.org/a5docs/trunk/)
+
+
+## Como rodar o projeto?
+- Para compilação dos códigos, basta rodar o comando `make` no terminal.
+- PS: Fiz todo o projeto baseando-me na distro linux Ubuntu, impossibilitando de rodar em Windows / MacBook ou outras distos;
+
+
+## Modo de vitória:
+- Caso um jogador não acerte 3x nenhum alvo, perderá o jogo automaticamente;
+- Caso acabe a quantidade de alvos ativos, o jogador com o maior `score` será o vencedor;
+
+## Funcionamento do jogo:
+- Toda a lógica do jogo concentra-se no arquivo `main.c`, no método main. Para manter uma melhor organização na estrutura do código, implementei uma sequência de métodos com nomes claros e objetivos, que fazem parte da dinâmica do jogo, são eles:
+- Inicialização de variáveis do Allegro;
+- Criação das naves;
+- Criação da matriz contendo os alvos;
+- Enquanto o jogo estiver ativo, fará:
+- Desenha cenário e grid;
+- Atualiza valores das naves e do tiro de cada uma;
+- Desenha nave1 e nave2;
+- Escreve o placar na parte superior;
+- Checa colisão do tiro com algum alvo;
+- Checa se algum jogador venceu (Se a vida de algum jogador acabar, ou acabar os alvos na tela);
+- Printa vencedor;
+- Printa histórico de partidas e a última partida;
