@@ -1,0 +1,5 @@
+total_vitorias_p1 = 3 
+total_vitorias_p2 = 15 
+id_ultimo_vencedor = 2
+ultimo_score = 3
+ultimo_hp = 3

@@ -1,7 +1,7 @@
 FLAGS = -std=c99 -O3
 PATH_ALLEGRO=/usr/lib/x86_64-linux-gnu
 LIB_ALLEGRO=-lallegro -lallegro_acodec -lallegro_audio -lallegro_color -lallegro_dialog -lallegro_font -lallegro_image -lallegro_primitives -lallegro_ttf
-FILE_UTILS = src/utils/rand_values
+FILE_UTILS = src/utils
 
 all: main
 
