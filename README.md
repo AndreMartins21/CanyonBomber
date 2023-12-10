@@ -20,6 +20,11 @@
 - Caso um jogador não acerte 3x nenhum alvo, perderá o jogo automaticamente;
 - Caso acabe a quantidade de alvos ativos, o jogador com o maior `score` será o vencedor;
 
+## Como jogar?
+- A velocidade e direção das naves não é possível controlar;
+- Para atirar com a nave1, basta apertar `a`;
+- Para atirar com a nave2, basta apertar `space`;
+
 ## Funcionamento do jogo:
 - Toda a lógica do jogo concentra-se no arquivo `main.c`, no método main. Para manter uma melhor organização na estrutura do código, implementei uma sequência de métodos com nomes claros e objetivos, que fazem parte da dinâmica do jogo, são eles:
 - Inicialização de variáveis do Allegro;
